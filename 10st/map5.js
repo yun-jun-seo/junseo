@@ -31,8 +31,8 @@ kakao.maps.event.addListener(map, "click", async function (event) {
 
   const url = `https://api.openweathermap.org/data/2.5/weather?lat=${latlng.getLat()}&lon=${latlng.getLng()}&appid=${API_KEY}`;
   const weatherData = await (await fetch(url)).json();
-  const city = weatherData.weather[0].main;
-  const weather = weatherData.name;
+  const weather = weatherData.weather[0].main;
+  const city = weatherData.name;
 
   // [ https://apis.map.kakao.com/web/sample/addMarkerClickEvent/ 마커에 클릭 이벤트 등록하기]
 
@@ -49,4 +49,5 @@ kakao.maps.event.addListener(map, "click", async function (event) {
   });
   // 마커 위에 인포윈도우를 표시합니다
   infowindow.open(map, marker);
+  map.setsenter(latlng)
 });
