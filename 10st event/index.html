@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미스터 피자</title>
+  </head>
+  <body>
+    <h1>마스터 피자</h1>
+    <hr />
+    <div><strong>주문방식</strong></div>
+    <select name="" id="orderMethod">
+      <option>배달</option>
+      <option>방문포장</option>
+    </select>
+    <hr />
+    <div><strong>메뉴</strong></div>
+    <div>
+      킹 브레드 쉬림프 골드 30,900원
+      <input class="food1 food" type="checkbox" value="30900" />
+    </div>
+    <div>
+      멕시칸 하바네로 피자 24,900원
+      <input class="food2 food" type="checkbox" value="24900" />
+    </div>
+    <div>
+      햄벅한 새우 29,900원
+      <input class="food3 food" type="checkbox" value="29900" />
+    </div>
+    <div>
+      오븐치즈 미트스파게티 7,900원
+      <input class="food4 food" type="checkbox" value="7900" />
+    </div>
+    <div>
+      콜라500ml 1,400원
+      <input class="food5 food" type="checkbox" value="1400" />
+    </div>
+    <hr />
+    <div><strong>상품합계 & 선택주문방식</strong></div>
+    <div id="totalOrder"></div>
+    <div id="orderMethodPic"></div>
+    <hr />
+    <div><strong>최종합계</strong></div>
+    <div id="totalPrice"></div>
+
+    <script src="main2.js"></script>
+  </body>
+</html>
